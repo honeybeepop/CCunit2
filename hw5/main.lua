@@ -13,5 +13,16 @@ function draw ()
   background(54,79,73)
 
   text("X: "..mouseX.." Y:"..mouseY, mouseX+5, mouseY+30)
---thing follows the mouse, use mouse x and mouse y as the positioning variables.
+--thing that follows the mouse, use mouse x and mouse y as the positioning variables.
+
+--sky
+fill(33,1,36)
+rect(0,0,height, width / 2.5)
+--clouds
+fill(244,253,175)
+ellipse(width * .1, height / 2.75, width / 3, height / 5)
+ellipse(0, height / 3.75, width / 8, height / 8)
+ellipse(width / 3, height / 2.5, width / 2.5, height / 8)
+ellipse(width / 2, height / 2.75, width / 2.5, height / 6)
+ellipse(width*.6, height / 3.5, width / 8, height / 7)
 end
