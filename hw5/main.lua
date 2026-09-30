@@ -26,4 +26,6 @@ ellipse(0, height / 3.75, width / 8, height / 8)
 ellipse(width / 3, height / 2.5, width / 2.5, height / 8)
 ellipse(width / 2, height / 2.75, width / 2.5, height / 6)
 ellipse(width*.6, height / 3.5, width / 8, height / 7)
+--bridge
+
 end
