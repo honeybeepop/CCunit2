@@ -19,6 +19,7 @@ function draw ()
 fill(33,1,36)
 rect(0,0,height, width / 2.5)
 --clouds
+noStroke()
 fill(244,253,175)
 ellipse(width * .1, height / 2.75, width / 3, height / 5)
 ellipse(0, height / 3.75, width / 8, height / 8)
