@@ -1,8 +1,10 @@
 require("L5")
 
 --All animations should loop/bounce using if and else statements.
-circleMove=4
-circleX = -10
+circleMove=8
+circleX = -50
+
+triangleScale = 1
 
 function setup()
   size(800, 800)
@@ -20,14 +22,24 @@ background(252,176,191)
    elseif mouseX < width then
     fill(186,221,127)
    end
+   noStroke()
 circle(circleX,400,400,100)
    --circleX = circleX+2
-      if circleX > width+10 or circleX < -10 then
+      if circleX > width+50 or circleX < -50 then
        circleMove = circleMove*-1
       end
   circleX = circleX+circleMove
-  
-end
---One animation should change the size.
+
+  --One animation should change the size.
+      if circleX < width then
+        triangleScale = triangleScale+0.2
+      end
+push()
+  scale(triangleScale)
+  triangle(800,800, 400,800, 800,400)
+  rect(400,400,100,100)
+pop()
 
 --One animation should change the position.
+
+end
