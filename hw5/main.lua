@@ -29,14 +29,16 @@ ellipse(width*.56, height / 3.5, width / 8.8, height / 8.5)
 --back buildings
 fill(59, 79, 73)
 quad(width*.56, height*.14, width*.72, height*.06, width*.72, height*.5, width*.56, height*.5)
-fill(33,1,36,50)
-quad(width*.72, height*.3, width*.8, height*2.5, width*.5, height*.5, width*.5, height*.5)
-fill(255,255,255)
-quad(width*.72, height*.3, width*.8, height*2.5, width*.5, height*.5, width*.5, height*.5)
-fill(33,1,36,80)
+fill(59,79,73)
+quad(width*.72, height*.02, width*.9, height*.04, width*.9, height*1, width*.72, height*1)
+fill(33,1,36, 80)
+quad(width*.72, height*.02, width*.9, height*.04, width*.9, height*1, width*.72, height*1)
+fill(59,79,73)
+quad(width*.9, height*.07, width*1, height*.09, width*1, height*1, width*.9, height*1)
+fill(33,1,36, 50)
+quad(width*.9, height*.07, width*1, height*.09, width*1, height*1, width*.9, height*1)
+fill(33,1,36,90)
 rect(width*.56,height*0, width*1,height /2)
-fill(255,255,255)
-quad(width*.72, height*.3, width*.8, height*2.5, width, height, width, height)
 
 --bridge
 fill(101, 116, 58)
@@ -94,9 +96,21 @@ ellipse(width*.33, height*.14, width*.001, height*.001)
 ellipse(width*.25, height*.28, width*.001, height*.001)
 ellipse(width*.23, height*.15, width*.001, height*.001)
 ellipse(width*.55, height*.15, width*.001, height*.001)
+ellipse(width*.93, height*.04, width*.001, height*.001)
+ellipse(width*.7, height*.03, width*.002, height*.002)
+ellipse(width*.63, height*.07, width*.001, height*.001)
 
---river
-
+--hills
+noStroke()
+fill(101,116,58,75)
+ellipse(width*0, height, width*1.7, height*1)
+ellipse(width*1, height, width*1.5, height*.9)
+ellipse(width*0, height, width*1.4, height*.75)
+ellipse(width*0, height, width*.8, height*.5)
+ellipse(width*1, height, width*.9, height*.8)
+ellipse(width*.7, height, width*1.2, height*.3)
+ellipse(width*.2, height, width*.7, height*.3)
+ellipse(width*1, height, width*1.2, height*.6)
 
 --mouse star
 noStroke()
@@ -109,7 +123,4 @@ stroke(33,1,36)
 strokeWeight(.5)
 fill(244,253,175)
 ellipse(mouseX,mouseY, width*.009, height*.009)
-
---mouse coords, keep at bottom
-  text("X: "..mouseX.." Y:"..mouseY, mouseX+5, mouseY+30)
   end
