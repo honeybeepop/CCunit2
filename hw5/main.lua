@@ -1,7 +1,7 @@
 require("L5")
 
 function setup()
-  size(500, 500)
+  size(900, 900)
   angleMode(DEGREES)
 end
 
@@ -16,6 +16,7 @@ function draw ()
 noStroke()
 fill(33,1,36)
 rect(0,0,height, width / 2.5)
+
 --clouds
 noStroke()
 fill(244,253,175)
@@ -23,8 +24,10 @@ ellipse(width * .1, height / 2.75, width / 3, height / 5)
 ellipse(0, height / 3.75, width / 8, height / 8)
 ellipse(width / 3, height / 2.5, width / 2.5, height / 8)
 ellipse(width / 2, height / 2.75, width / 2.5, height / 6)
-ellipse(width*.6, height / 3.5, width / 8, height / 7)
+ellipse(width*.56, height / 3.5, width / 8.8, height / 8.5)
+
 --bridge
+
 
 --moon
 noStroke()
@@ -33,6 +36,7 @@ ellipse(width*.2, height*.1, width*.15, height*.15)
 noStroke()
 fill(33,1,36)
 ellipse(width*.23, height*.1, width*.1, height*.1)
+
 --stars
 stroke(239,221,141)
 strokeWeight(1)
@@ -58,6 +62,7 @@ ellipse(width*.33, height*.14, width*.001, height*.001)
 ellipse(width*.25, height*.28, width*.001, height*.001)
 ellipse(width*.23, height*.15, width*.001, height*.001)
 ellipse(width*.55, height*.15, width*.001, height*.001)
+
 --mouse star
 noStroke()
 fill(239,253,175)
@@ -66,10 +71,10 @@ triangle(mouseX+4, mouseY, mouseX, mouseY-15, mouseX-4, mouseY)
 triangle(mouseX, mouseY-4, mouseX+15, mouseY, mouseX, mouseY+4)
 triangle(mouseX, mouseY-4, mouseX-15, mouseY, mouseX, mouseY+4)
 stroke(33,1,36)
-strokeWeight(.3)
+strokeWeight(.5)
 fill(244,253,175)
-ellipse(mouseX,mouseY, width*.015, height*.015)
+ellipse(mouseX,mouseY, width*.009, height*.009)
 
+--mouse coords, keep at bottom
   text("X: "..mouseX.." Y:"..mouseY, mouseX+5, mouseY+30)
---thing that follows the mouse, use mouse x and mouse y as the positioning variables. keep at bottom.
-end
+  end
