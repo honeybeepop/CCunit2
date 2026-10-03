@@ -26,8 +26,34 @@ ellipse(width / 3, height / 2.5, width / 2.5, height / 8)
 ellipse(width / 2, height / 2.75, width / 2.5, height / 6)
 ellipse(width*.56, height / 3.5, width / 8.8, height / 8.5)
 
---bridge
+--back buildings
+fill(59, 79, 73)
+quad(width*.56, height*.14, width*.72, height*.06, width*.72, height*.5, width*.56, height*.5)
+fill(33,1,36)
+rect(width*.5, height*.5, width*1, height*1)
 
+--bridge
+fill(101, 116, 58)
+rect(width*0, height*.36, width*1, height*.11)
+stroke(244,253,175,50)
+strokeWeight(29)
+line(width*0, height*.378, width*1, height*.378)
+--brige holes
+noStroke()
+fill(33,1,36)
+ellipse(width*.065, height*.5, width / 8, height / 6)
+ellipse(width*.2, height*.5, width / 8, height / 6)
+ellipse(width*.335, height*.5, width / 8, height / 6)
+ellipse(width*.47, height*.5, width / 8, height / 6)
+ellipse(width*.605, height*.5, width / 8, height / 6)
+ellipse(width*.74, height*.5, width / 8, height / 6)
+ellipse(width*.875, height*.5, width / 8, height / 6)
+ellipse(width*1.01, height*.5, width / 8, height / 6)
+
+--ground
+noStroke()
+fill(57,79,73)
+rect(width*0, height*.47, width*1, height*1)
 
 --moon
 noStroke()
@@ -62,6 +88,9 @@ ellipse(width*.33, height*.14, width*.001, height*.001)
 ellipse(width*.25, height*.28, width*.001, height*.001)
 ellipse(width*.23, height*.15, width*.001, height*.001)
 ellipse(width*.55, height*.15, width*.001, height*.001)
+
+--river
+
 
 --mouse star
 noStroke()
