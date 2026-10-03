@@ -12,10 +12,8 @@ end
 function draw ()
   background(54,79,73)
 
-  text("X: "..mouseX.." Y:"..mouseY, mouseX+5, mouseY+30)
---thing that follows the mouse, use mouse x and mouse y as the positioning variables.
-
 --sky
+noStroke()
 fill(33,1,36)
 rect(0,0,height, width / 2.5)
 --clouds
@@ -35,4 +33,43 @@ ellipse(width*.2, height*.1, width*.15, height*.15)
 noStroke()
 fill(33,1,36)
 ellipse(width*.23, height*.1, width*.1, height*.1)
+--stars
+stroke(239,221,141)
+strokeWeight(1)
+fill(244,253,175)
+ellipse(width*.02, height*.02, width*.008, height*.008)
+ellipse(width*.4, height*.2, width*.001, height*.001)
+ellipse(width*.03, height*.20, width*.001, height*.001)
+ellipse(width*.4, height*.02, width*.002, height*.002)
+ellipse(width*.03, height*.1, width*.003, height*.003)
+ellipse(width*.07, height*.05, width*.002, height*.001)
+ellipse(width*.45, height*.1, width*.001, height*.002)
+ellipse(width*.35, height*.25, width*.001, height*.003)
+ellipse(width*.2, height*.21, width*.003, height*.001)
+ellipse(width*.07, height*.15, width*.008, height*.008)
+ellipse(width*.55, height*.06, width*.008, height*.008)
+ellipse(width*.30, height*.20, width*.008, height*.008)
+ellipse(width*.35, height*.05, width*.008, height*.008)
+ellipse(width*.4, height*.20, width*.003, height*.003)
+ellipse(width*.12, height*.22, width*.008, height*.008)
+ellipse(width*.43, height*.15, width*.006, height*.006)
+ellipse(width*.46, height*.26, width*.001, height*.001)
+ellipse(width*.33, height*.14, width*.001, height*.001)
+ellipse(width*.25, height*.28, width*.001, height*.001)
+ellipse(width*.23, height*.15, width*.001, height*.001)
+ellipse(width*.55, height*.15, width*.001, height*.001)
+--mouse star
+noStroke()
+fill(239,253,175)
+triangle(mouseX-4, mouseY, mouseX, mouseY+15, mouseX+4, mouseY)
+triangle(mouseX+4, mouseY, mouseX, mouseY-15, mouseX-4, mouseY)
+triangle(mouseX, mouseY-4, mouseX+15, mouseY, mouseX, mouseY+4)
+triangle(mouseX, mouseY-4, mouseX-15, mouseY, mouseX, mouseY+4)
+stroke(33,1,36)
+strokeWeight(.3)
+fill(244,253,175)
+ellipse(mouseX,mouseY, width*.015, height*.015)
+
+  text("X: "..mouseX.." Y:"..mouseY, mouseX+5, mouseY+30)
+--thing that follows the mouse, use mouse x and mouse y as the positioning variables. keep at bottom.
 end
