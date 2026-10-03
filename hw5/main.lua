@@ -29,8 +29,14 @@ ellipse(width*.56, height / 3.5, width / 8.8, height / 8.5)
 --back buildings
 fill(59, 79, 73)
 quad(width*.56, height*.14, width*.72, height*.06, width*.72, height*.5, width*.56, height*.5)
-fill(33,1,36)
-rect(width*.5, height*.5, width*1, height*1)
+fill(33,1,36,50)
+quad(width*.72, height*.3, width*.8, height*2.5, width*.5, height*.5, width*.5, height*.5)
+fill(255,255,255)
+quad(width*.72, height*.3, width*.8, height*2.5, width*.5, height*.5, width*.5, height*.5)
+fill(33,1,36,80)
+rect(width*.56,height*0, width*1,height /2)
+fill(255,255,255)
+quad(width*.72, height*.3, width*.8, height*2.5, width, height, width, height)
 
 --bridge
 fill(101, 116, 58)
