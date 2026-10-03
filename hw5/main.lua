@@ -28,4 +28,11 @@ ellipse(width / 2, height / 2.75, width / 2.5, height / 6)
 ellipse(width*.6, height / 3.5, width / 8, height / 7)
 --bridge
 
+--moon
+noStroke()
+fill(239,221,141)
+ellipse(width*.2, height*.1, width*.15, height*.15)
+noStroke()
+fill(33,1,36)
+ellipse(width*.23, height*.1, width*.1, height*.1)
 end
