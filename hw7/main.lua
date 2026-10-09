@@ -48,9 +48,11 @@ end
 pop()
 
 --all randomizers
---left "clock hand" randomizer
+--right shape changer
 push()
-        function mousePressed()
+    function mousePressed()
+                    --left clock hand randomizer
+            push()
     translate(175,250)
     noStroke()
     fill(240,230,230)
@@ -60,11 +62,28 @@ push()
                 stroke(0,0,80)
                 rotate(random(360))
                 line(0,0,75,75) 
+                end
+                pop()
+        noStroke()
+        fill(240,230,230)
+        rect(400,0,300,500)
+            rr = 255
+            gg = 232
+            bb = 0
+            xy = 32
+            push()
+            translate(530,0)
+            for i = 1, 10, 1 do
+                noStroke()
+                fill(rr,gg,bb)
+                rr = rr-25.5
+                gg = gg-11.2
+                bb = bb+19.1
+                ellipse(0,xy,60,30)
+                xy = xy + 48
             end
-        end
+    end
 pop()
-
---right shape randomizer maybe
 
 --divider line only - draw
     function draw()
