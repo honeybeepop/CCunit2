@@ -30,10 +30,20 @@ end
 pop()
 
 --right color loop
+rr = 255
+gg = 232
+bb = 0
+xy = 32
 push()
-translate(525,400)
+translate(500,0)
 for i = 1, 10, 1 do
-    rect(10,10,20,20)
+    noStroke()
+    fill(rr,gg,bb)
+    rr = rr-25.5
+    gg = gg-11.2
+    bb = bb+19.1
+    rect(0,xy,60,30)
+    xy = xy + 45
 end
 pop()
 
@@ -54,8 +64,7 @@ push()
         end
 pop()
 
---right shape randomizer
-
+--right shape randomizer maybe
 
 --divider line only - draw
     function draw()
