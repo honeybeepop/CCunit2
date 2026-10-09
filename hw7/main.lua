@@ -36,8 +36,10 @@ push()
     translate(175,250)
     strokeWeight(3)
     stroke(0,0,0)
-    rotate(random(360))
-    line(0,0,75,75)
+            for i = 1, 1, 12 do
+                rotate(random(360))
+                line(0,0,75,75) 
+            end
         end
 pop()
 
