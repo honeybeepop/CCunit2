@@ -1,34 +1,54 @@
 require("L5")
 
---change these
-verses = {"onions.","tomatoes.","garlic.","pineapple."}
-myText = "you love her, don't you?"
+--variables/tables/etc
 fontSize = 8
+startText = "can you take it?"
+verse1 = {"bite","burn","eat","destroy"}
+theThe = "the"
+verse2 = {"rich man", "regime", "hand", "gun", "eye"}
+verse3 = {"that feeds.", "that beats.", "that hates.", "that kills.", "that watches"}
 
+
+--setup
 function setup()
-    size(1000, 600)
+    size(600, 600)
     angleMode(DEGREES)
     windowTitle("bee larson hw8")
 
-    background(255,255,255)
+    background(230,218,204)
     textAlign(CENTER)
     textSize(40)
-    -- using random and the array name to get a random element from the array
     textGenerator(30)
 end
 
+--first chunk of text, no user input
 function textGenerator(fontSize)
- fill(0)
+    fill(6,1,23)
   textSize(fontSize)
-  text(myText..random(verses), width/2, height/2)
-  text("Even more text!",width/2, height*0.6)
+  text(startText, width/2, height*.35)
+    fill(82,0,0)
+  text(random(verse1), width/2, height*.45)
+    fill(6,1,23)
+  text(theThe, width/2,height*.55)
+  text(random(verse2), width/2, height*.65)
+    fill(82,0,0)
+  text(random(verse3), width/2, height*.75)
 end
 
+--mouse press
 function mousePressed()
-  background(255,255,255)
-  text(myText..random(verses), width/2, height/2)
-  text("second line!", width/2, height*.6)
+  background(230,218,204)
+   fill(6,1,23)
+  text(startText, width/2, height*.35)
+    fill(82,0,0)
+  text(random(verse1), width/2, height*.45)
+    fill(6,1,23)
+  text(theThe, width/2,height*.55)
+  text(random(verse2), width/2, height*.65)
+    fill(82,0,0)
+  text(random(verse3), width/2, height*.75)
 end
 
+--purposefully empty
 function draw()
 end
