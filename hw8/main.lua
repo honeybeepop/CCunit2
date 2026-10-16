@@ -1,42 +1,34 @@
--- Array + Function
--- Chelsea Thompto
-
--- Pick a random element from an array/table
-
--- an array of string(text) values
-pizzaToppings = {"onions.","tomatoes.","garlic.","pineapple."}
-myText = "I want a pizza with "
-myfontSize = 2
-
 require("L5")
 
+--change these
+verses = {"onions.","tomatoes.","garlic.","pineapple."}
+myText = "you love her, don't you?"
+fontSize = 8
+
 function setup()
-    size(600, 400)
+    size(1000, 600)
     angleMode(DEGREES)
-    frameRate(60)
-    windowTitle("Array +  Function")
+    windowTitle("bee larson hw8")
 
-    describe('Black background with white text.')
-
-    background(0)
+    background(255,255,255)
     textAlign(CENTER)
-    textSize(30)
+    textSize(40)
     -- using random and the array name to get a random element from the array
-    sentenceBuilder(30)
-    textGenerator()
+    textGenerator(30)
+end
+
+function textGenerator(fontSize)
+ fill(0)
+  textSize(fontSize)
+  text(myText..random(verses), width/2, height/2)
+  text("Even more text!",width/2, height*0.6)
+end
+
+function mousePressed()
+  background(255,255,255)
+  text(myText..random(verses), width/2, height/2)
+  text("second line!", width/2, height*.6)
 end
 
 function draw()
-  -- pick a new random element and draw it every 2 seconds (60 frames per second times 2)
-  if frameCount%120 == 0 then
-    background(0)
-    sentenceBuilder(myfontSize)
-    myfontSize = myfontSize + 1
-  end
-end
-
-function sentenceBuilder(fontSize)
-  textSize(fontSize)
-  text(myText..random(pizzaToppings), width/2, height/2)
-  text("Even more text!",width/2, height*0.6)
 end
